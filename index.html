@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+produtividade</title>
+    <link rel="shortcut icon" href="assets/imagens/favicon1.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__titulo-principal">+produtividade</h1>
+    </header>
+    
+    <main class="main">
+        <h2 class="main__mensagem">Planejar ajuda a reduzir o esforço e aumentar a realização</h2>
+
+        <section class="main__tarefas section">
+            <h2 class="tarefas__titulo section__titulo">Tarefas do dia</h2>
+
+            <input type="text" class="tarefas__input" placeholder="Digite aqui uma nova tarefa">
+
+            <button class="tarefas__bt--adicionarTarefa bt">Adicionar Tarefa</button>
+
+            <ul class="tarefas__lista"></ul>
+
+            <div class="tarefas__progresso">
+                <p class="progresso__mensagem">0% tarefas concluídas</p>
+
+                <span class="progresso__barra--estrutura">
+                    <div class="progresso__barra--preenchimento"></div>
+                </span>
+            </div>
+        </section>
+
+        <section class="main__temporizador section">
+            <h2 class="temporizador__titulo section__titulo">Temporizador</h2>
+            <p class="temporizador__mensagem">Breves pausas mentais ajudam a manter o foco e a melhorar a capacidade de se concentrar em uma tarefa por períodos prolongados. Escolha o seu favorito:</p>
+            <div class="temporizador__opcoesTimer">
+                <label class="opcoesTimer__opcao--label">
+                    <input type="radio" name="opcoesTimer" id="opcoesTimer__opcao--25m" class="opcoesTimer__opcao--input" checked>
+                    <span class="opcoesTimer__opcao--span"></span>
+                    25m de execução + 5m de descanso
+                </label>
+
+                <label class="opcoesTimer__opcao--label">
+                    <input type="radio" name="opcoesTimer" id="opcoesTimer__opcao--1h" class="opcoesTimer__opcao--input">
+                    <span class="opcoesTimer__opcao--span"></span>
+                    1h de execução + 10m de descanso
+                </label>
+            </div>
+
+            <p class="temporizador__timer">00:00:00</p>
+
+            <div class="temporizador__controle">
+                <button class="controle__bt--iniciar bt">Iniciar</button>
+                <button class="controle__bt--pausar bt">Pausar</button>
+                <button class="controle__bt--reiniciar bt">Reiniciar</button>
+            </div>
+
+            <p class="temporizador__mensagem">Ligue o som para ser alertado no início e fim de cada intervalo.</p>
+        </section>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
